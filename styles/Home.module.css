@@ -51,7 +51,14 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  color: #fff;
+  //background-image: url(/ezgif.com-gif-maker.gif);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .title,
@@ -136,7 +143,7 @@
   }
 }
 .backgroundblur {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -147,7 +154,7 @@
   z-index: -1;
 }
 .clock {
-  position: absolute;
+  position: fixed;
   right: 20px;
   bottom: 0px;
   color: #fff;
@@ -175,4 +182,57 @@
   color: #ff4d4d;
   filter: blur(.5px);
   flex-direction: row;
+}
+.profile {
+  width: 600px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.35s ease, border-color 0.35s ease, fill 0.35s ease;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "profileleft profileright";
+}
+.profileleft {
+  grid-area: profileleft;
+}
+.profileright {
+  grid-area: profileright;
+  text-align: center;
+}
+.avatar {
+  border-radius: 10px;
+  filter: grayscale(1);
+}
+.weather {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  fill: #fff;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.35s ease, border-color 0.35s ease, fill 0.35s ease;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.textleft {
+  text-align: left;
+}
+.textleft p a {
+  color: #ff4d4d;
+}
+.aboutavatar {
+  float: left; 
+  margin-right: 15px;
+  border-radius: 10px;
 }

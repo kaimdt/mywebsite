@@ -1,0 +1,45 @@
+.weather_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;;
+}
+.temp {
+    display: grid;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+.weather {
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    padding-left: 12px;
+
+}
+
+.weather p {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+}
+
+.weather img {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+.location_box {
+}
