@@ -127,30 +127,6 @@ const options: MarkdownToJSX.Options = {
     li: {
       props: { className: "mt-1" },
     },
-    code: {
-      component: (props: {
-        children: ReactNode;
-        language?: string;
-        style: Record<string, string>;
-        className?: string;
-      }) => {
-        if (!props.className) {
-          return (
-            <code className="text-md px-2 py-0.5 bg-gray-100 text-gray-500">
-              {props.children}
-            </code>
-          );
-        }
-        return (
-          <SyntaxHighlighter
-            language={props.className.replace("lang-", "")}
-            style={light}
-          >
-            {props.children}
-          </SyntaxHighlighter>
-        );
-      },
-    },
     hr: {
       props: {
         className: "mt-5 border-none border-gray-200 border-top-4",
