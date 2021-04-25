@@ -7,8 +7,7 @@ import fetcher from '../lib/fetcher';
 
 const api = {
   key: "b5228c4c0bee00a931110d03ad712490",
-  //base: "http://localhost:2000/data/2.5/"
-  base: "http://api.openweathermap.org/data/2.5/"
+  base: "https://api.openweathermap.org/data/2.5/"
 }
 
 function WeatherCard() {
@@ -52,7 +51,7 @@ function WeatherCard() {
                 <div className="date">{dateBuilder(new Date())}</div>
               </div>
             </div>
-            <div className={weathercard.weather}><img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} /><p>{weather.weather[0].main}</p></div>
+            <div className={weathercard.weather}><img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} /><p>{weather.weather[0].main}</p></div>
           </div>
         </div>
         ) : ('loading ...')}
