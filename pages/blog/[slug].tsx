@@ -63,7 +63,7 @@ function PostTemplate({ content, data }) {
             <div className={blog.three}>{dayjs(date).format(DATE_FORMAT)}</div>
           </div>
         </div>
-        <div className={["blog.content", "markdown-body"]}>
+        <div className={blog.content}>
           <Markdown options={options}>{content}</Markdown>
         </div>
       </div>
