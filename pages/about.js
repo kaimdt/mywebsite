@@ -50,7 +50,8 @@ export default function About() {
         About
         </h1>
         <div className={styles.grid}>
-          <p><img className={styles.aboutavatar} src="/assets/images/avatar.jpg" height="140" height="140" alt="avatar" />Hi. I'm Kai, I'm 17 years old and I'm from Germany. I am a self-taught full-stack javascript engineer with 2 years of experience.</p>
+          <p><img className={styles.aboutavatar} src="/assets/images/avatar.jpg" height="140" height="140" alt="avatar" />Hi. I'm Kai, I'm 17 years old and I'm from Germany. I am a self-taught full-stack javascript engineer with 2 years of experience. This September I will start an apprenticeship as an IT specialist for application development. I have always been passionate about programming and have already gained some experience in different areas. As a result, I have specialized in development with NodeJS and Python.
+		  </p>
         </div>
       </main>
       </motion.div>
