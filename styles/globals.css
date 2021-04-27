@@ -2,8 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto';
+  letter-spacing: 0.2px;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
 }
 
 a {

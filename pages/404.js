@@ -46,8 +46,8 @@ export default function Custom404() {
   },
 }}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-        404
+        <h1 className={styles.errortitle}>
+        504
         </h1>
         <div className={styles.grid}>
           <p>The page you requested was not found.</p>

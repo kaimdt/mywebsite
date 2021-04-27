@@ -10,7 +10,7 @@ export default class Navbar extends React.Component {
         <ul>
           <li><Link href="/"><a className={navbar.navlink} data-tooltip="Home"><div className=""><i className="fas fa-home"></i> Home</div></a></Link></li>
           <li><Link href="/projects"><a className={navbar.navlink} data-tooltip="Projects"><div className=""><i className="fas fa-code"></i> Projects</div></a></Link></li>
-          <li><Link href="/about"><a className={navbar.navlink} data-tooltip="Projects"><div className=""><i class="fas fa-address-card"></i> About me</div></a></Link></li>
+          <li><Link href="/about"><a className={navbar.navlink} data-tooltip="Projects"><div className=""><i class="fas fa-address-card"></i> About</div></a></Link></li>
           <li><Link href="/blog"><a className={navbar.navlink} data-tooltip="Projects"><div className=""><i class="fas fa-newspaper"></i> Blog</div></a></Link></li>
           <li><Link href="/setup"><a className={navbar.navlink} data-tooltip="Setup"><div className=""><i class="fas fa-desktop"></i> Setup</div></a></Link></li>
           <li><a className={navbar.navlink} href="https://github.com/kaimdt" data-tooltip="GitHub"><div className=""><i className="fab fa-github"></i> GitHub</div></a></li>

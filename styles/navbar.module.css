@@ -32,10 +32,18 @@
   height: 1em;
 }
 .brandmark {
-  text-transform: uppercase;
-  font-weight: 100;
+  text-transform: lowercase;
+  font-weight: 700;
   font-size: 20px;
   text-align: center;
+  transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.brandmark:hover {
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #ff0606;
 }
 .navlink {
   list-style-type: none;
@@ -44,10 +52,12 @@
   height: 45px;
   width: 45px;
   color: #5E6A75;
+  font-weight: 700;
 }
 
 .navlink:hover {
-  color: #ff4d4d;
+  color: #ff0606;
+  transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
 .navbar::-webkit-scrollbar-thumb {

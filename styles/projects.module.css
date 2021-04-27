@@ -42,4 +42,6 @@
 }
 .project:hover {
     transform: scale(1.1);
+    border: solid 1.1px #ff0606;
+    color: #ff0606;
 }
