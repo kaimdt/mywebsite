@@ -50,7 +50,6 @@ export default function NowPlaying() {
                 right: 20px;
                 top: 20px;
                 color: #fff;
-                filter: blur(.5px);
                 flex-direction: row;
               }
               .spotify .songtext {
