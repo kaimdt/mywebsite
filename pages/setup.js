@@ -67,7 +67,7 @@ export default function Setup() {
         <h3 className={styles.title}>
         Software
         </h3>
-        <p>Python IDE: <a href="https://www.jetbrains.com/pycharm-edu/">PyCharm Community Edition 2020.3.3</a></p>
+        <p>Python IDE: <a href="https://www.jetbrains.com/pycharm/">PyCharm Community Edition 2020.3.3</a></p>
         <p>Nodejs IDE: <a href="https://www.jetbrains.com/webstorm/">WebStorm 2020.3.2</a></p>
         <p>Other IDE: <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
         <div className={styles.grid}>
