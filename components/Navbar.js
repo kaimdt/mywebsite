@@ -17,6 +17,7 @@ export default class Navbar extends React.Component {
           <li><a className={navbar.navlink} href="/discord" data-tooltip="Discord"><div className=""><i className="fab fa-discord"></i> Discord</div></a></li>
           <li><a className={navbar.navlink} href="mailto://inbox@kaimdt.com" data-tooltip="Discord"><div className=""><i class="fas fa-envelope"></i> E-Mail</div></a></li>
           <li><a className={navbar.navlink} href="https://twitter.com/lucnema" data-tooltip="Twitter"><div className=""><i className="fab fa-twitter"></i> Twitter</div></a></li>
+		  <li><a className={navbar.navlink} href="https://leryon.com/imprint" data-tooltip="Imprint"><div className=""><i className="fab fa-copyright"></i> Imprint</div></a></li>
         </ul>
       </nav>
     )}
