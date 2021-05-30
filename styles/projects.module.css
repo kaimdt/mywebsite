@@ -45,3 +45,20 @@
     border: solid 1.1px #ff0606;
     color: #ff0606;
 }
+.language::before {
+    content: "Developed with: ";
+    color: #fff;
+}
+.language {
+    display: contents;
+    width: auto;
+}
+.language svg {
+    color: #fff;
+    margin: 0px 8px;
+    font-size: 18px;
+    width: .875em;
+}
+.language svg:hover {
+    color: #fff;
+}
