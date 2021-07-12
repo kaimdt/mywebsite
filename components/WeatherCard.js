@@ -4,7 +4,7 @@ import weathercard from '../styles/weather.module.css';
 
 
 import fetcher from '../lib/fetcher';
-
+//TODO
 const api = {
   key: "b5228c4c0bee00a931110d03ad712490",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -15,7 +15,8 @@ function WeatherCard() {
   const [weather, setWeather] = useState({});
 
   const { data } = useSWR(
-    `${api.base}weather?q=Munich&units=metric&APPID=${api.key}`,
+    //`${api.base}weather?q=Munich&units=metric&APPID=${api.key}`,
+    `weather.json`,
     url =>
       fetch(url)
         .then(_ => _.json())

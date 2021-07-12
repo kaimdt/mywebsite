@@ -7,6 +7,7 @@
   align-items: center;
   z-index: 1000;
   color: #fff;
+  position: relative;
 }
 
 .main {
@@ -20,20 +21,43 @@
 
 .footer {
   width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
+  position: absolute;
+  bottom: -50px;
+  background-color: black;
+  color: #5E6A75;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  display:table;
+  padding-right:10px;
+  padding-left:10px;
+  clear: both;
+  }
+.cell{
+  width:8%;
+  display:table-cell;
+  height:50px;
+  vertical-align: middle;
 }
-
-.footer img {
-  margin-left: 0.5rem;
+.c2238{
+  text-align:center;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.c2326{
+  text-align:center;
+}
+.c2500{
+  color:black;
+  width:32px;
+  height:45px;
+  text-align:left;
+  display:block;
+}
+@media (max-width: 768px){
+  .cell{
+    width:100%;
+    display:block;
+  }
 }
 
 .title a {
@@ -50,14 +74,9 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 100;
+  font-size: 6rem;
+	color: #fff;
 }
 
 .errortitle {
@@ -162,7 +181,8 @@
   width: 100%;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpiZmBg6AZiDiBWZ4YyQMCOCcYA4kMAAQYAHyYCCUdxidgAAAAASUVORK5CYII=');
   z-index: -1;
 }
 .clock {
@@ -196,21 +216,10 @@
   flex-direction: row;
 }
 .profile {
-  width: 600px;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.35s ease, border-color 0.35s ease, fill 0.35s ease;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "profileleft profileright";
 }
 .profileleft {
   grid-area: profileleft;
@@ -264,4 +273,10 @@
 }
 .test2 {
   color: #12FFDB;
+}
+.footerbrandmark {
+  fill: #5E6A75; 
+  transform: scale(0.6); 
+  float: left; 
+  margin-left: 100px;
 }

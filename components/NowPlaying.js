@@ -1,9 +1,27 @@
 import useSWR from 'swr';
 
 import fetcher from '../lib/fetcher';
+import { average } from 'color.js'
+
 
 export default function NowPlaying() {
+  //TODO
   const { data } = useSWR('/api/now-playing', fetcher, { refreshInterval: 10000 });
+
+  if(data?.albumImageUrl !== undefined){
+    var image = data?.albumImageUrl;
+  }else {
+    var image = "/assets/images/waterfall-3537232.jpg";
+  }
+    if(process.browser){
+      average(image, { amount: 1, format: 'hex' }).then(color => {
+        console.log(color)
+        localStorage.setItem("color", color);
+      })
+      var color = localStorage.getItem("color");
+    }else{
+      var color = "#000000"
+    }
 
   return (
     <div className="spotify">
@@ -33,7 +51,7 @@ export default function NowPlaying() {
         <span className="line">
         {data?.songUrl ? (`
            – 
-          `) : (` `)}
+          `) : (``)}
         </span>
         <p className="">
           {data?.artist ?? ''}
@@ -44,11 +62,21 @@ export default function NowPlaying() {
                 background: #000;
                 background: url(${data?.albumImageUrl})no-repeat center center;
                 background-size: cover;
+                color: ${color};
+            }
+            nav {
+              background: ${color}!important;
+            }
+            nav a {
+              color: #ffff!important;
+            }
+            nav a:hover, nav a:focus {
+              color: #BFBFBF!important;
             }
             .spotify {
                 position: absolute;
                 right: 20px;
-                top: 20px;
+                bottom: 20px;
                 color: #fff;
                 flex-direction: row;
               }
@@ -79,8 +107,9 @@ export default function NowPlaying() {
         ): (
             <style jsx global>{`
             body {
-                background: #1A2141;
-                background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+              background: #000;
+              background: url(/assets/images/waterfall-3537232.jpg)no-repeat center center;
+              background-size: cover;
             }
             .spotify {
                 position: absolute;

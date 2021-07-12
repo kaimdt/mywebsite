@@ -24,7 +24,7 @@ export default class Clock extends React.Component {
         date: new Date()
       });
     }
-  
+  /*
     render() {
       return (
         <div>
@@ -32,4 +32,8 @@ export default class Clock extends React.Component {
         </div>
       );
     }
+    */
+   render() {
+      return null
+   }
   }

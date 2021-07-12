@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link'
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
 import NowPlaying from '../components/NowPlaying';
@@ -50,21 +51,39 @@ export default function Home() {
       <main className={styles.main}>
 
         <div className={styles.profile}>
-          <div className={styles.profileleft}>
-            <img className={styles.avatar} src="/assets/images/avatar.jpg" height="140" height="140" alt="avatar" />
-          </div>
           <div className={styles.profileright}>
             <h1 className={styles.title}>
               Kai Lukas Marquardt
             </h1>
           </div>
-        </div>
-        <p className={styles.description}>
+          <p className={styles.description}>
         Node.JS, TypeScript, React, Next.Js and Python</p>
+        </div>
         <WeatherCard />
       </main>
       </motion.div>
       <footer className={styles.footer}>
+        <div className={styles.cell}>
+          <div className={styles.row}>
+            <div className={styles.cell}>
+              <div className={styles.c2414}>
+                <a href="https://media.leryon.com"><svg className={styles.footerbrandmark} width="30" height="30" viewBox="0 0 30 30">
+                  <path d="M 3.746e-4,2.209e-4 V 14.998994 H 7.4995742 V 7.499795 H 14.998772 V 5.954e-4 H 1e-7 Z M 30,29.999779 V 15.001007 h -7.499197 v 7.499197 h -7.499201 v 7.4992 z" />
+                </svg></a>
+              </div>
+            </div>
+            <div className={styles.cell}>
+              <div className={styles.c2238}>
+                <p>©2021 Leryon MEDIA. All Rights Reserved.</p>
+              </div>
+            </div>
+            <div className={styles.cell}>
+              <div className={styles.c2326}>
+               <Link href="/imprint">Imprint</Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   )
