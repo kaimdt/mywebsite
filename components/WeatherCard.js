@@ -15,8 +15,8 @@ function WeatherCard() {
   const [weather, setWeather] = useState({});
 
   const { data } = useSWR(
-    //`${api.base}weather?q=Munich&units=metric&APPID=${api.key}`,
-    `weather.json`,
+    `${api.base}weather?q=Munich&units=metric&APPID=${api.key}`,
+    //`weather.json`,
     url =>
       fetch(url)
         .then(_ => _.json())
